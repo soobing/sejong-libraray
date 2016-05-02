@@ -1,0 +1,13 @@
+[user]
+    name = soobing1
+    email = sbbak@outlook.co.kr
+[core]
+    editor = nano
+    whitespace = off
+    excludesfile = ~/.gitignore
+[advice]
+    statusuoption = false
+[color]
+    ui = true
+[push]
+    default = current

@@ -1,0 +1,637 @@
+2016/03/16 04:12:13 heroku-cli: Adding dependencies...
+2016/03/16 04:12:16  done
+2016/03/16 04:12:16 truncating error log...
+2016/03/16 04:12:16 cleaning up tmp dirs...
+2016/03/16 04:12:16 heroku-cli: Installing core plugins...
+2016/03/16 04:12:29  done
+2016/04/14 12:23:22 Email: 
+2016/04/14 12:23:22 heroku-cli: Updating to 4.29.4-6a9494e... 
+2016/04/14 12:23:24 done
+2016/04/14 12:23:24 reexecing new CLI...
+2016/04/14 12:23:36 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:23:37 heroku-cli: Updating plugins...
+2016/04/14 12:23:51  !
+2016/04/14 12:23:51  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-orgs@1.0.7"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-orgs/node_modules/heroku-cli-util
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-orgs/node_modules/heroku-cli-util' -> '/home/ubuntu/.heroku/node_modules/heroku-orgs/node_modules/.heroku-cli-util.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:23:51 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc8203a6680)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:23:57  !
+2016/04/14 12:23:57  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-cli-addons@0.3.0"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-apps
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-apps' -> '/home/ubuntu/.heroku/node_modules/.heroku-apps.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:23:57 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc8203853f0)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:24:11  !
+2016/04/14 12:24:11  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-pipelines@1.1.3"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/create-error-class
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/create-error-class' -> '/home/ubuntu/.heroku/node_modules/.create-error-class.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:24:11 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc820367810)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:24:12  ▸    Failed to install heroku-pipelines. Retrying...
+2016/04/14 12:24:18  !
+2016/04/14 12:24:18  ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "remove" "heroku-pipelines"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-cli-addons
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-cli-addons' -> '/home/ubuntu/.heroku/node_modules/.heroku-cli-addons.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+2016/04/14 12:24:18 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc820166930)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.ParsePlugin(0xc8203a6350, 0x10, 0x1, 0x0, 0x0)
+/Users/jdickey/src/github.com/heroku/heroku-cli/plugins.go:294 +0x3a0
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:84 +0x2c8
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:24:29  !
+2016/04/14 12:24:29  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-pipelines"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-fork
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-fork' -> '/home/ubuntu/.heroku/node_modules/.heroku-fork.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:24:29 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc8203a7510)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:85 +0x2fa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:24:37  !
+2016/04/14 12:24:37  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/node_modules/heroku-pipelines/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-run@3.1.3"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-run/node_modules/lodash
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-run/node_modules/lodash' -> '/home/ubuntu/.heroku/node_modules/heroku-run/node_modules/.lodash.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:24:37 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc820385910)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:24:45 heroku-cli: Installing core plugins...
+2016/04/14 12:24:48  !
+2016/04/14 12:24:48  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-local@5.0.1"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-git
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-git' -> '/home/ubuntu/.heroku/node_modules/.heroku-git.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:24:48 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc820367f40)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:24:55 heroku-cli: Installing core plugins (retrying)...
+2016/04/14 12:24:56  !
+2016/04/14 12:24:56  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-fork@4.1.2"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-local
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-local' -> '/home/ubuntu/.heroku/node_modules/.heroku-local.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:24:56 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc8203a6170)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:25:09  !
+2016/04/14 12:25:09  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-status@2.1.2"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/moment
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/moment' -> '/home/ubuntu/.heroku/node_modules/.moment.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:25:09 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc8203848b0)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:25:11  !
+2016/04/14 12:25:11  ▸    Error reading plugin: heroku-status
+ ▸    exit status 1
+ ▸    module.js:341
+ ▸        throw err;
+ ▸        ^
+ ▸    
+ ▸    Error: Cannot find module 'moment'
+ ▸        at Function.Module._resolveFilename (module.js:339:15)
+ ▸        at Function.Module._load (module.js:290:25)
+ ▸        at Module.require (module.js:367:17)
+ ▸        at require (internal/module.js:16:19)
+ ▸        at Object.<anonymous> (/home/ubuntu/.heroku/node_modules/heroku-status/commands/status.js:5:14)
+ ▸        at Module._compile (module.js:413:34)
+ ▸        at Object.Module._extensions..js (module.js:422:10)
+ ▸        at Module.load (module.js:357:32)
+ ▸        at Function.Module._load (module.js:314:12)
+ ▸        at Module.require (module.js:367:17)
+2016/04/14 12:25:11 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc8203799a0)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:85 +0x2fa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:25:18  !
+2016/04/14 12:25:18  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-apps" "heroku-cli-addons" "heroku-fork" "heroku-pipelines"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-orgs
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-orgs' -> '/home/ubuntu/.heroku/node_modules/.heroku-orgs.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:25:18 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.ExitIfError(0x7f705dfce028, 0xc8201829c0)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:183 +0x132
+main.SetupBuiltinPlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/plugins.go:379 +0x1de
+main.action(0x904160, 0x23, 0x88fd48, 0x4, 0xc82013bcb0)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.SetupBuiltinPlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/plugins.go:381 +0xf5
+main.glob.func1(0xc8200f2000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/command.go:227 +0x3f
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18300)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:25:21  !
+2016/04/14 12:25:21  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-spaces@2.1.2"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-run
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-run' -> '/home/ubuntu/.heroku/node_modules/.heroku-run.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:25:21 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc820167f70)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:25:31  !
+2016/04/14 12:25:31  ▸    Error installing package. 
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/package.json'
+ ▸    npm WARN enoent ENOENT: no such file or directory, open '/home/ubuntu/.heroku/node_modules/heroku-pipelines/package.json'
+ ▸    npm WARN .heroku No description
+ ▸    npm WARN .heroku No repository field.
+ ▸    npm WARN .heroku No README data
+ ▸    npm WARN .heroku No license field.
+ ▸    npm ERR! Linux 4.2.0-c9
+ ▸    npm ERR! argv "/home/ubuntu/.heroku/node-5.10.1-linux-amd64/node" "/home/ubuntu/.heroku/npm-3.8.5/cli.js" "install" "heroku-apps@1.7.3"
+ ▸    npm ERR! node v5.10.1
+ ▸    npm ERR! npm  v3.8.5
+ ▸    npm ERR! path /home/ubuntu/.heroku/node_modules/heroku-spaces
+ ▸    npm ERR! code EXDEV
+ ▸    npm ERR! errno -18
+ ▸    npm ERR! syscall rename
+ ▸    
+ ▸    npm ERR! EXDEV: cross-device link not permitted, rename '/home/ubuntu/.heroku/node_modules/heroku-spaces' -> '/home/ubuntu/.heroku/node_modules/.heroku-spaces.DELETE'
+ ▸    npm ERR! 
+ ▸    npm ERR! If you need help, you may report this error at:
+ ▸    npm ERR!     <https://github.com/npm/npm/issues>
+ ▸    
+ ▸    npm ERR! Please include the following file with any support request:
+ ▸    npm ERR!     /home/ubuntu/.heroku/npm-debug.log
+ ▸    
+ ▸    Try running again with GODE_DEBUG=info to see more output.
+2016/04/14 12:25:31 goroutine 1 [running]:
+runtime/debug.Stack(0x0, 0x0, 0x0)
+/usr/local/Cellar/go/1.6/libexec/src/runtime/debug/stack.go:24 +0x80
+main.WarnIfError(0x7f4f65385028, 0xc820384770)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:139 +0x131
+main.updatePlugins.func1()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:83 +0x2aa
+main.action(0x8effe0, 0x1c, 0x0, 0x0, 0x94c198)
+/Users/jdickey/src/github.com/heroku/heroku-cli/io.go:288 +0x1bb
+main.updatePlugins()
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:93 +0x44
+main.Update(0x94bbb8, 0x6, 0x899d10, 0xa)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:67 +0x6b
+main.glob.func8(0xc8200f0000)
+/Users/jdickey/src/github.com/heroku/heroku-cli/update.go:44 +0x19e
+main.(*Cli).Run(0xab7560, 0xc82000a450, 0x3, 0x3, 0xecea18200)
+/Users/jdickey/src/github.com/heroku/heroku-cli/cli.go:83 +0x5d9
+main.main()
+/Users/jdickey/src/github.com/heroku/heroku-cli/main.go:102 +0x126
+
+2016/04/14 12:25:32  done. Updated 9 packages.
+2016/04/14 12:25:32 truncating error log...
+2016/04/14 12:25:32 cleaning up tmp dirs...
+2016/04/14 12:25:35 heroku-cli: Installing core plugins...
+2016/04/14 12:25:53 heroku-cli: Installing core plugins (retrying)...
+2016/04/14 12:26:09  done
+Heroku client internal error.
+undefined method `[]' for nil:NilClass
+/usr/local/heroku/lib/heroku/jsplugin.rb:60:in `commands'
+/usr/local/heroku/lib/heroku/jsplugin.rb:227:in `find_command'
+/usr/local/heroku/lib/heroku/jsplugin.rb:13:in `try_takeover'
+/usr/local/heroku/lib/heroku/cli.rb:28:in `start'
+/usr/bin/heroku:25:in `<main>'
+2016/04/14 12:28:14 heroku-cli: Installing core plugins...
+2016/04/14 12:28:22  done
+2016/04/14 12:28:24 Error: Expected response to be successful, got 422
+    at Request.handleFailure (/home/ubuntu/.heroku/node_modules/heroku-apps/node_modules/heroku-client/lib/request.js:285:9)
+    at /home/ubuntu/.heroku/node_modules/heroku-apps/node_modules/heroku-client/lib/request.js:164:14
+    at IncomingMessage.<anonymous> (/home/ubuntu/.heroku/node_modules/heroku-apps/node_modules/heroku-client/lib/request.js:393:5)
+    at emitNone (events.js:85:20)
+    at IncomingMessage.emit (events.js:179:7)
+    at endReadableNT (_stream_readable.js:913:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+2016/04/14 12:28:24 {"id":"invalid_params","message":"You've reached the limit of 5 apps for unverified accounts. Delete some apps or add a credit card to verify your account."}
+2016/04/14 12:28:25 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:32:51 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:38:24 Error: Expected response to be successful, got 422
+    at Request.handleFailure (/home/ubuntu/.heroku/node_modules/heroku-apps/node_modules/heroku-client/lib/request.js:285:9)
+    at /home/ubuntu/.heroku/node_modules/heroku-apps/node_modules/heroku-client/lib/request.js:164:14
+    at IncomingMessage.<anonymous> (/home/ubuntu/.heroku/node_modules/heroku-apps/node_modules/heroku-client/lib/request.js:393:5)
+    at emitNone (events.js:85:20)
+    at IncomingMessage.emit (events.js:179:7)
+    at endReadableNT (_stream_readable.js:913:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+2016/04/14 12:38:24 {"id":"invalid_params","message":"You've reached the limit of 5 apps for unverified accounts. Delete some apps or add a credit card to verify your account."}
+2016/04/14 12:38:25 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:39:22 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:40:55 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:41:32 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:43:44 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:45:00 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:45:06 open /home/ubuntu/.heroku/config.json: no such file or directory
+2016/04/14 12:46:16 open /home/ubuntu/.heroku/config.json: no such file or directory

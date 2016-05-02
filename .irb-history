@@ -1,0 +1,11 @@
+Content.new
+Content.create(name:"soobin", msg:"hi", room_id:1)
+Room.new
+Room.create(name:"basement")
+Room.create(name:"2floor")
+Room.create(name="3floor")
+Room.create(name:"3floor")
+Room.create(name:"4floor")
+Room.create(name:"5floor")
+Room.all
+exit
